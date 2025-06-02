@@ -64,15 +64,15 @@ Có thể dùng để thống kê hành vi người tiêu dùng, hỗ trợ mark
 
 **🚀 Hướng phát triển tương lai:**
 
->  Kết nối API AI để ước lượng tuổi/giới tính chính xác hơn (VD: DeepFace, MediaPipe).
+  Kết nối API AI để ước lượng tuổi/giới tính chính xác hơn (VD: DeepFace, MediaPipe).
 
->  Phân loại nhiều người cùng lúc trong khung hình.
+  Phân loại nhiều người cùng lúc trong khung hình.
 
->  Thêm bản đồ trực quan hóa vị trí sản phẩm (dạng sơ đồ siêu thị).
+  Thêm bản đồ trực quan hóa vị trí sản phẩm (dạng sơ đồ siêu thị).
 
->  Tích hợp camera IP, gửi cảnh báo từ xa.
+  Tích hợp camera IP, gửi cảnh báo từ xa.
 
->  Xây dựng hệ thống quản trị web để xem thống kê dữ liệu (Flask/Django).
+  Xây dựng hệ thống quản trị web để xem thống kê dữ liệu (Flask/Django).
 
 **👨‍💻 Tác giả**
 
