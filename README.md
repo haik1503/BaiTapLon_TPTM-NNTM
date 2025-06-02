@@ -1,5 +1,5 @@
 # BaiTapLon_TPTM-NNTM
-##**🔍 Giới thiệu đề tài:**
+**🔍 Giới thiệu đề tài:**
 
 Trong bối cảnh các siêu thị hiện đại đang ngày càng chuyển mình theo hướng thông minh hóa và cá nhân hóa trải nghiệm mua sắm, việc ứng dụng công nghệ nhận diện khuôn mặt để gợi ý sản phẩm theo đặc điểm từng khách hàng đang trở thành xu hướng tất yếu. 
 Đề tài “Hệ thống gợi ý sản phẩm trong siêu thị thông minh dựa trên nhận diện khuôn mặt” được xây dựng nhằm giúp các siêu thị vừa và nhỏ có thể ứng dụng AI để:
@@ -15,28 +15,28 @@ Ghi nhận thông tin khách hàng và lượt ghé thăm để hỗ trợ phân
 Phân biệt khách hàng cũ và mới dựa vào ảnh khuôn mặt đã lưu.
 ___
 
-##**🧭 Sơ đồ hoạt động tổng thể:**
+**🧭 Sơ đồ hoạt động tổng thể:**
 ![image](https://github.com/user-attachments/assets/ef9d1415-61dc-4176-97a1-8f1f5b98d4d8)
 ___
 
-##**🧩 Các chức năng chính của hệ thống:**
+**🧩 Các chức năng chính của hệ thống:**
 ![image](https://github.com/user-attachments/assets/29b6612d-f14d-4ee2-a0e3-f65d84971885)
 
 ___
 
-##**⚙️ Công nghệ và thư viện sử dụng:**
+**⚙️ Công nghệ và thư viện sử dụng:**
 
 ![image](https://github.com/user-attachments/assets/60904e53-3be6-4d50-9ce5-5f673d30a240)
 
 ___
 
-##**🖼️ Giao diện phần mềm (GUI):**
+**🖼️ Giao diện phần mềm (GUI):**
 
 ![Screenshot 2025-06-01 093850](https://github.com/user-attachments/assets/17737da8-c85b-441f-bada-f8c359c20e06)
 
 ___
 
-##**✅ Ưu điểm nổi bật của hệ thống:**
+**✅ Ưu điểm nổi bật của hệ thống:**
 
 Tự động hóa hoàn toàn quá trình đề xuất sản phẩm.
 
@@ -48,7 +48,7 @@ Có thể dùng để thống kê hành vi người tiêu dùng, hỗ trợ mark
 
 ___
 
-##**📂 Cấu trúc thư mục:**
+**📂 Cấu trúc thư mục:**
 
 ├── known_faces/                     # Thư mục chứa ảnh khách hàng cũ
 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-##**🧪 2. Tính ứng dụng thực tế:**
+**🧪 2. Tính ứng dụng thực tế:**
 
  **Phân tích hành vi khách hàng**: Dữ liệu được lưu trong `SQLite` giúp thống kê độ tuổi, giới tính phổ biến trong ngày/tuần/tháng.
 
@@ -70,7 +70,7 @@ ___
 
   ___
 
-##**🚀 Hướng phát triển tương lai:**
+**🚀 Hướng phát triển tương lai:**
 
   Kết nối API AI để ước lượng tuổi/giới tính chính xác hơn (VD: DeepFace, MediaPipe).
 
@@ -83,7 +83,7 @@ ___
   Xây dựng hệ thống quản trị web để xem thống kê dữ liệu (Flask/Django).
 ___
 
-##**👨‍💻 Tác giả**
+**👨‍💻 Tác giả**
 
 Nguyễn Thanh Hải
 
