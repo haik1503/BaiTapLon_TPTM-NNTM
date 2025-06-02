@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hệ thống gợi ý mua sắm</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; padding: 20px; }
+        .container { display: flex; gap: 20px; }
+        .video-feed { max-width: 640px; }
+        .recommendations { width: 300px; border: 1px solid #ccc; padding: 10px; }
+        img { width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-feed">
+            <h2>Video từ Webcam</h2>
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+        </div>
+        <div class="recommendations">
+            <h2>Gợi ý sản phẩm</h2>
+            <div id="customer-info"></div>
+            <div id="recommendation-list"></div>
+        </div>
+    </div>
+
+    <script>
+        function fetchRecommendations() {
+            fetch('/get_recommendations')
+                .then(response => response.json())
+                .then(data => {
+                    const customerDiv = document.getElementById('customer-info');
+                    const recList = document.getElementById('recommendation-list');
+                    if (data.customer) {
+                        customerDiv.innerHTML = `
+                            <p><strong>Khách hàng:</strong> ${data.customer.name}</p>
+                            <p><strong>Tuổi:</strong> ${data.customer.age}</p>
+                            <p><strong>Giới tính:</strong> ${data.customer.gender}</p>
+                        `;
+                        recList.innerHTML = '<strong>Gợi ý:</strong><ul>' + 
+                            data.recommendations.map(item => 
+                                `<li>${item.product} (Kệ ${item.shelf}, Tầng ${item.floor})</li>`
+                            ).join('') + '</ul>';
+                    } else {
+                        customerDiv.innerHTML = '<p>Đang chờ nhận diện...</p>';
+                        recList.innerHTML = '';
+                    }
+                });
+        }
+        setInterval(fetchRecommendations, 1000); // Cập nhật mỗi 2 giây
+        fetchRecommendations();
+    </script>
+</body>
+</html>
